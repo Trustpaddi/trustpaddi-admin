@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card class="my-3">
     <v-row>
       <v-col lg="5">
         <v-img width="100" height="100" :src="item.img"></v-img>

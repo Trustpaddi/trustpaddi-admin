@@ -1,8 +1,8 @@
 <template>
   <v-app id="paddi_app">
-    <Nav :toggleSidebar="toggleSidebar" />
+    <Nav />
     <!-- <v-navigation-drawer app> -->
-      <Sidebar :sidebar="sidebar" />
+    <Sidebar />
     <!-- </v-navigation-drawer> -->
     <v-main class="dashboardColor">
       <v-container fluid>
@@ -29,15 +29,9 @@ export default {
     Footer,
   },
   data() {
-    return {
-      sidebar: true,
-    };
+    return {};
   },
-  methods: {
-    toggleSidebar() {
-      this.sidebar = !this.sidebar;
-    },
-  },
+  methods: {},
 
   created() {
     Vue.prototype.$vs = this.$vs;

@@ -40,10 +40,11 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
-  props: {
-    sidebar: Boolean,
-  },
+  // props: {
+  //   sidebar: Boolean,
+  // },
   data() {
     return {
       // sidebar: false,
@@ -62,6 +63,7 @@ export default {
       ],
     };
   },
+  computed: mapState(["sidebar"]),
 };
 </script>
 <style scoped>
